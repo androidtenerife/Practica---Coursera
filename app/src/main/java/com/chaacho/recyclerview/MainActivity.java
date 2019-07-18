@@ -24,5 +24,6 @@ public class MainActivity extends AppCompatActivity {
         mascotas.add(new Mascotas("Dog 4", "96215", "dog4@chaacho.com", R.drawable.perroc));
 
 
+
     }
 }
