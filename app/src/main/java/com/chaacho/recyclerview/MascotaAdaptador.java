@@ -10,7 +10,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.Adapter;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
-public class MascotaAdaptador extends Adapter<MascotaAdaptador.MascotaViewHolder> {
+public class
+MascotaAdaptador extends Adapter<MascotaAdaptador.MascotaViewHolder> {
 
 
     @NonNull
