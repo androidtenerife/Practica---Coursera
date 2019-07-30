@@ -1,5 +1,6 @@
 package com.chaacho.recyclerview;
 
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -10,19 +11,33 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.Adapter;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
+import com.chaacho.recyclerview.pojo.Mascotas;
+
+import java.util.ArrayList;
+
 public class
 MascotaAdaptador extends Adapter<MascotaAdaptador.MascotaViewHolder> {
 
+ArrayList<Mascotas>mascotas;
+
+    public MascotaAdaptador(ArrayList<Mascotas> mascotas) {
+        this.mascotas=mascotas;
+    }
 
     @NonNull
     @Override
     public MascotaViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        // Inflar el layout y lo pasará al viewholder para que obtenga los views.
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.mascotas,parent,false);
+
+        return new MascotaViewHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MascotaViewHolder holder, int position) {
-
+    //Asocia cada elemento de la lista con cada view
+    public void onBindViewHolder(@NonNull MascotaViewHolder mascotaViewHolder, int position) {
+        Mascotas mascota = mascotas.get(position);
+        mascotaViewHolder.tvTel.setText(mascota.getTelefono());
     }
 
     @Override
@@ -35,7 +50,7 @@ MascotaAdaptador extends Adapter<MascotaAdaptador.MascotaViewHolder> {
         private ImageView imgFoto;
         private TextView tvNombre;
         private TextView tvApellido;
-        private TextView tvTelefono;
+        private TextView tvTel;
         private TextView tvEmail;
 
 
@@ -46,7 +61,7 @@ MascotaAdaptador extends Adapter<MascotaAdaptador.MascotaViewHolder> {
             tvNombre = itemView.findViewById(R.id.tvNombre);
             tvApellido = itemView.findViewById(R.id.tvApellido);
             tvEmail = itemView.findViewById(R.id.tvMail);
-            tvTelefono = itemView.findViewById(R.id.tvTelefono);
+            tvTel = itemView.findViewById(R.id.tvTelefono);
 
 
 
@@ -54,3 +69,6 @@ MascotaAdaptador extends Adapter<MascotaAdaptador.MascotaViewHolder> {
     }
 
 }
+
+
+
