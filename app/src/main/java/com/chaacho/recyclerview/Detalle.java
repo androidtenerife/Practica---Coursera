@@ -21,8 +21,10 @@ public class Detalle extends AppCompatActivity {
 
         // Recibo los parámetros
         Bundle parametros = getIntent().getExtras();
-        String nombre = param
-        String telefono
+        String nombre = parametros.getString("nombre");
+        String telefono= parametros.getString("telefono");
+        String email=parametros.getString("email");
+        int foto = parametros.getInt("foto");
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

@@ -50,8 +50,12 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
 
                 Toast.makeText(view.getContext(), mascota.getNombre(), Toast.LENGTH_SHORT).show();
                 //Intent intent = new Intent (,Detalle.class);
-                Intent intent1 = new Intent(activity,Detalle.class);
-                activity.startActivity(intent1);
+                Intent intent1 = new Intent(view.getContext(), Detalle.class);
+                intent1.putExtra("nombre",mascota.getNombre());
+                intent1.putExtra("telefono",mascota.getTelefono());
+                intent1.putExtra("email",mascota.getEmail());
+                intent1.putExtra("foto",mascota.getFoto());
+                view.getContext().startActivity(intent1);
 
             }
         });
