@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.widget.TextView;
 
 public class Detalle extends AppCompatActivity {
 
@@ -18,6 +19,10 @@ public class Detalle extends AppCompatActivity {
         setContentView(R.layout.activity_detalle);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        // Defino los textViews
+        TextView tvTelefono = findViewById(R.id.tvTel);
+        TextView tvNombre = findViewById(R.id.tvNombre);
+        TextView tvMail = findViewById(R.id.tvMail);
 
         // Recibo los parámetros
         Bundle parametros = getIntent().getExtras();
@@ -25,7 +30,10 @@ public class Detalle extends AppCompatActivity {
         String telefono= parametros.getString("telefono");
         String email=parametros.getString("email");
         int foto = parametros.getInt("foto");
-
+        //Seteo los valores que vienen en parametros.
+        tvTelefono.setText(telefono);
+        tvNombre.setText(nombre);
+        tvMail.setText(email);
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
