@@ -6,4 +6,5 @@
     <string name="email">Email</string>
     <string name="Telefono">Telefono</string>
     <string name="Apellido">Apellido</string>
+    <string name="title_activity_detalle">Detalle</string>
 </resources>

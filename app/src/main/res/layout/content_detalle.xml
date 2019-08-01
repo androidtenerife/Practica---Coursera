@@ -4,13 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvMascotas"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-
-    </androidx.recyclerview.widget.RecyclerView>
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Detalle"
+    tools:showIn="@layout/activity_detalle">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
