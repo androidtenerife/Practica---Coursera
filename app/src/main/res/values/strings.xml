@@ -7,4 +7,5 @@
     <string name="Telefono">Telefono</string>
     <string name="Apellido">Apellido</string>
     <string name="title_activity_detalle">Detalle</string>
+    <string name="Like_button">Like button</string>
 </resources>

@@ -72,4 +72,28 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/ivMail"
         app:layout_constraintTop_toBottomOf="@+id/tvMail" />
+
+    <ImageView
+        android:id="@+id/ivLike"
+        android:layout_width="19dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#2196F3"
+        android:contentDescription="@string/Like_button"
+        app:layout_constraintEnd_toStartOf="@+id/tvLike"
+        app:layout_constraintTop_toBottomOf="@+id/ivTelefono"
+        app:srcCompat="@drawable/ic_action_like" />
+
+    <TextView
+        android:id="@+id/tvLike"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/Like_button"
+        android:text="Likes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvTel"
+        app:layout_constraintTop_toBottomOf="@+id/tvTel" />
 </androidx.constraintlayout.widget.ConstraintLayout>
