@@ -17,7 +17,7 @@ public class Detalle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle);
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.miActionBar);
         setSupportActionBar(toolbar);
         // Defino los textViews
         TextView tvTelefono = findViewById(R.id.tvTel);
@@ -25,24 +25,30 @@ public class Detalle extends AppCompatActivity {
         TextView tvMail = findViewById(R.id.tvMail);
 
         // Recibo los parámetros
+        try {
+
         Bundle parametros = getIntent().getExtras();
         String nombre = parametros.getString("nombre");
         String telefono= parametros.getString("telefono");
         String email=parametros.getString("email");
         int foto = parametros.getInt("foto");
+
+
         //Seteo los valores que vienen en parametros.
         tvTelefono.setText(telefono);
         tvNombre.setText(nombre);
         tvMail.setText(email);
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        }catch (NullPointerException e){
+
+        }
+       
+        try {
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }catch (NullPointerException f){
+
+        }
+
     }
 
 }
