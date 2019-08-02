@@ -9,4 +9,7 @@
     <string name="title_activity_detalle">Detalle</string>
     <string name="Like_button">Like button</string>
     <string name="likes">Likes</string>
+    <string name="contacto">Contacto</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="title_activity_contacto">Contacto</string>
 </resources>

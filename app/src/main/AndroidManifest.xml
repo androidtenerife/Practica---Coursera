@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity
+            android:name=".Contacto"
+            android:label="@string/title_activity_contacto"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chaacho.recyclerview.MainActivity" />
+        </activity>
+        <activity
             android:name=".Detalle"
             android:label="@string/title_activity_detalle"
             android:parentActivityName=".MainActivity"

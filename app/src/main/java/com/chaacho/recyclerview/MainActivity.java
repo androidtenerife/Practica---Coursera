@@ -1,11 +1,15 @@
 package com.chaacho.recyclerview;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.Toolbar;
 
 import com.chaacho.recyclerview.pojo.Mascotas;
@@ -27,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //Toolbar myToolbar = findViewById(R.id.my_toolbar);
         //setSupportActionBar(myToolbar);
+        // Menú de opciones
+
 
         ArrayList<String> mascotasContacto = new ArrayList<String>();
         listaMascotas = (RecyclerView) findViewById(R.id.rvMascotas);
@@ -39,7 +45,30 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_opciones,menu);
+        return true;
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        // Debemos ver que es lo que ha pulsado.
+        switch (item.getItemId()){
+            //Devolverá el id del buton pulsado
+            case R.id.mAbout:
+                Intent intent = new Intent(this, ActivityAbout.class);
+                startActivity(intent);
+                break;
+            case R.id.mSettings:
+                Intent intent1 = new Intent(this, ActivitySettings.class);
+                startActivity(intent1);
+                break;
+        }
+
+
+        return super.onOptionsItemSelected(item);
+    }
     private void setSupportActionBar(Toolbar myToolbar) {
     }
 
