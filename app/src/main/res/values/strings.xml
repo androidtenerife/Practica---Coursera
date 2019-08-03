@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RecyclerView</string>
+    <string name="app_name">Mascotas</string>
     <string name="perro_imagen">Perro imagen</string>
     <string name="Nombre">Nombre</string>
     <string name="tvNombre">TextView</string>
