@@ -12,4 +12,5 @@
     <string name="contacto">Contacto</string>
     <string name="acerca_de">Acerca de</string>
     <string name="title_activity_contacto">Contacto</string>
+    <string name="title_activity_acerca_de">AcercaDe</string>
 </resources>

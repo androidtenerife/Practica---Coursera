@@ -25,12 +25,14 @@ public class MainActivity extends AppCompatActivity {
     Activity activity;
     private RecyclerView listaMascotas;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //Toolbar myToolbar = findViewById(R.id.my_toolbar);
-        //setSupportActionBar(myToolbar);
+       // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+   Toolbar myToolbar = findViewById(R.id.miActionBar);
+   setSupportActionBar(myToolbar);
         // Menú de opciones
 
 
@@ -56,12 +58,12 @@ public class MainActivity extends AppCompatActivity {
         // Debemos ver que es lo que ha pulsado.
         switch (item.getItemId()){
             //Devolverá el id del buton pulsado
-            case R.id.mAbout:
-                Intent intent = new Intent(this, ActivityAbout.class);
+            case R.id.acerca:
+                Intent intent = new Intent(this, AcercaDe.class);
                 startActivity(intent);
                 break;
-            case R.id.mSettings:
-                Intent intent1 = new Intent(this, ActivitySettings.class);
+            case R.id.contacto:
+                Intent intent1 = new Intent(this, Contacto.class);
                 startActivity(intent1);
                 break;
         }

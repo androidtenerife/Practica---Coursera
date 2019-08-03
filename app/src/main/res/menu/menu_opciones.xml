@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="@string/contacto">Contacto</item>
-    <item android:title="@string/acerca_de">Acerca de</item>
+    <item android:title="@string/contacto"
+    android:id="@+id/contacto"
+        android:orderInCategory="102"
+        android:titleCondensed="Contacto">
+    </item>
+    <item android:title="@string/acerca_de"
+    android:id="@+id/acerca"
+    android:titleCondensed="Acerca de"
+    android:orderInCategory="101">
+    </item>
 
 </menu>
