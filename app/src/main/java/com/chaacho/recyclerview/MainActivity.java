@@ -54,14 +54,6 @@ public class MainActivity extends AppCompatActivity {
             setSupportActionBar(toolbar);
         }
 
-        //setSupportActionBar(toolbar);
-        // Menú de opcionesu
-
-
-
-
-
-
     }
 
     @Override
@@ -94,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Debo cargar los fragments para ponerlos en órbita.
     private ArrayList<Fragment> agregarFragments() {
-        ArrayList<Fragment> fragments = new ArrayList<Fragment>();
+        ArrayList<Fragment> fragments = new ArrayList<>();
         fragments.add(new RecyclerViewFragment());
         fragments.add(new BlankFragment());
         return fragments;

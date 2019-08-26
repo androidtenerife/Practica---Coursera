@@ -19,8 +19,8 @@ import com.chaacho.recyclerview.pojo.Mascotas;
 import java.util.ArrayList;
 
 public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.MascotaViewHolder> {
-    ArrayList<Mascotas>mascotas;
-    Activity activity;
+    private ArrayList<Mascotas>mascotas;
+    private Activity activity;
 
     public MascotaAdaptador(ArrayList<Mascotas> mascotas, Activity activity) {
         this.mascotas=mascotas;
