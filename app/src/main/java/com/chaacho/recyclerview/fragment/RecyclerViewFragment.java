@@ -52,6 +52,14 @@ public class RecyclerViewFragment extends Fragment {
         mascotas.add(new Mascotas("Dog 2", "93213", "dog2@chaacho.com", R.drawable.perroa));
         mascotas.add(new Mascotas("Dog 3", "95216", "dog3@chaacho.com", R.drawable.perrob));
         mascotas.add(new Mascotas("Dog 4", "96215", "dog4@chaacho.com", R.drawable.perroc));
+        mascotas.add(new Mascotas("Dog 10", "94219", "dog1@chaacho.com", R.drawable.perro));
+        mascotas.add(new Mascotas("Dog 20", "93213", "dog2@chaacho.com", R.drawable.perroa));
+        mascotas.add(new Mascotas("Dog 30", "95216", "dog3@chaacho.com", R.drawable.perrob));
+        mascotas.add(new Mascotas("Dog 40", "96215", "dog4@chaacho.com", R.drawable.perroc));
+        mascotas.add(new Mascotas("Dog 5", "94219", "dog1@chaacho.com", R.drawable.perro));
+        mascotas.add(new Mascotas("Dog 6", "93213", "dog2@chaacho.com", R.drawable.perroa));
+        mascotas.add(new Mascotas("Dog 7", "95216", "dog3@chaacho.com", R.drawable.perrob));
+        mascotas.add(new Mascotas("Dog 8", "96215", "dog4@chaacho.com", R.drawable.perroc));
 
     }
 
