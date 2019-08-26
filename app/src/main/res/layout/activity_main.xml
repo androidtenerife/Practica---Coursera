@@ -6,8 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
         android:layout_height="wrap_content"
@@ -28,14 +26,13 @@
             android:layout_height="match_parent">
 
 
-
         </com.google.android.material.tabs.TabLayout>
 
-    </com.google.android.material.appbar.AppBarLayout>
 
+    </com.google.android.material.appbar.AppBarLayout>
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
