@@ -31,7 +31,7 @@
             android:name=".Detalle"
             android:label="@string/title_activity_detalle"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme">
+            android:theme="@style/Theme.Design.Light.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.chaacho.recyclerview.MainActivity" />
