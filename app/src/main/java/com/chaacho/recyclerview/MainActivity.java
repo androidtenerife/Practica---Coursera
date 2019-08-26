@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     // Defino los elementos del FrameLayout.
     private ViewPager viewPager;
     private TabLayout tabLayout;
-    private Toolbar mytoolbar;
+    private Toolbar toolbar;
     //TODO 1 Agregar un Arraylist de Mascotas
     ArrayList<Mascotas> mascotas;
     Activity activity;
@@ -45,13 +45,13 @@ public class MainActivity extends AppCompatActivity {
         }catch(NullPointerException e){
             System.out.println("Action Bar... Null pointer Exption");
         }
-        mytoolbar = findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         setupViewPager();
 
-        if (mytoolbar != null) {
-            setSupportActionBar(mytoolbar);
+        if (toolbar != null) {
+            setSupportActionBar(toolbar);
         }
 
         //setSupportActionBar(toolbar);
