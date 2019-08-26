@@ -2,24 +2,33 @@ package com.chaacho.recyclerview;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toolbar;
-
+import androidx.appcompat.widget.Toolbar;
+import com.chaacho.recyclerview.adapter.MascotaAdaptador;
+import com.chaacho.recyclerview.adapter.PageAdapter;
+import com.chaacho.recyclerview.fragment.BlankFragment;
+import com.chaacho.recyclerview.fragment.RecyclerViewFragment;
+import com.chaacho.recyclerview.pojo.Contacto;
 import com.chaacho.recyclerview.pojo.Mascotas;
-
+import com.google.android.material.tabs.TabLayout;
+import androidx.appcompat.widget.ActionBarOverlayLayout;
 import java.util.ArrayList;
-
-import static android.widget.LinearLayout.VERTICAL;
 
 
 public class MainActivity extends AppCompatActivity {
+    // Defino los elementos del FrameLayout.
+    private ViewPager viewPager;
+    private TabLayout tabLayout;
+    private Toolbar mytoolbar;
     //TODO 1 Agregar un Arraylist de Mascotas
     ArrayList<Mascotas> mascotas;
     Activity activity;
@@ -30,33 +39,41 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-       // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-   Toolbar myToolbar = findViewById(R.id.miActionBar);
-   setSupportActionBar(myToolbar);
-        // Menú de opciones
+        try {
+           getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+           // getSupportActionBar();
+        }catch(NullPointerException e){
+            System.out.println("Action Bar... Null pointer Exption");
+        }
+        mytoolbar = findViewById(R.id.toolbar);
+        tabLayout = (TabLayout) findViewById(R.id.tabLayout);
+        viewPager = (ViewPager) findViewById(R.id.viewPager);
+        setupViewPager();
+
+        if (mytoolbar != null) {
+            setSupportActionBar(mytoolbar);
+        }
+
+        //setSupportActionBar(toolbar);
+        // Menú de opcionesu
 
 
-        ArrayList<String> mascotasContacto = new ArrayList<String>();
-        listaMascotas = (RecyclerView) findViewById(R.id.rvMascotas);
-        LinearLayoutManager llm = new LinearLayoutManager(this);
-        llm.setOrientation(RecyclerView.VERTICAL);
-        listaMascotas.setLayoutManager(llm);
-        inicializarListaMascotas();
-        inicializarAdaptador();
+
 
 
 
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_opciones,menu);
+        getMenuInflater().inflate(R.menu.menu_opciones, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         // Debemos ver que es lo que ha pulsado.
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             //Devolverá el id del buton pulsado
             case R.id.acerca:
                 Intent intent = new Intent(this, AcercaDe.class);
@@ -71,23 +88,23 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    private void setSupportActionBar(Toolbar myToolbar) {
+
+    public void setSupportActionBar(Toolbar myToolbar) {
     }
 
-    public void inicializarListaMascotas(){
-        //TODO 2 Cargar Arraylist con los datos
-        mascotas = new ArrayList<Mascotas>();
-
-        mascotas.add(new Mascotas("Dog 1", "94219", "dog1@chaacho.com", R.drawable.perro));
-        mascotas.add(new Mascotas("Dog 2", "93213", "dog2@chaacho.com", R.drawable.perroa));
-        mascotas.add(new Mascotas("Dog 3", "95216", "dog3@chaacho.com", R.drawable.perrob));
-        mascotas.add(new Mascotas("Dog 4", "96215", "dog4@chaacho.com", R.drawable.perroc));
-
+    // Debo cargar los fragments para ponerlos en órbita.
+    private ArrayList<Fragment> agregarFragments() {
+        ArrayList<Fragment> fragments = new ArrayList<Fragment>();
+        fragments.add(new RecyclerViewFragment());
+        fragments.add(new BlankFragment());
+        return fragments;
     }
-    public void inicializarAdaptador(){
-        MascotaAdaptador adaptador = new MascotaAdaptador(mascotas,activity);
-        listaMascotas.setAdapter(adaptador);
 
+    private void setupViewPager() {
 
+        viewPager.setAdapter(new PageAdapter(getSupportFragmentManager(), agregarFragments()));
+        tabLayout.setupWithViewPager(viewPager);
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_stars);
+        tabLayout.getTabAt(1).setIcon(R.drawable.hueso);
     }
 }

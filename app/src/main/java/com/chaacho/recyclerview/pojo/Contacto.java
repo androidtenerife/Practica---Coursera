@@ -1,7 +1,8 @@
-package com.chaacho.recyclerview;
+package com.chaacho.recyclerview.pojo;
 
 import android.os.Bundle;
 
+import com.chaacho.recyclerview.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 

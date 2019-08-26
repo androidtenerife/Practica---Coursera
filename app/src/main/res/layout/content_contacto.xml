@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".Contacto"
+    tools:context=".pojo.Contacto"
     tools:showIn="@layout/activity_contacto">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

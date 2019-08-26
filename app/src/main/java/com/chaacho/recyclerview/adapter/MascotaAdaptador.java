@@ -1,7 +1,6 @@
-package com.chaacho.recyclerview;
+package com.chaacho.recyclerview.adapter;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,9 +11,9 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.RecyclerView.Adapter;
-import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
+import com.chaacho.recyclerview.Detalle;
+import com.chaacho.recyclerview.R;
 import com.chaacho.recyclerview.pojo.Mascotas;
 
 import java.util.ArrayList;

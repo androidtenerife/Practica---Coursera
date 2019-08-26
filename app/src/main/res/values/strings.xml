@@ -13,4 +13,18 @@
     <string name="acerca_de">Acerca de</string>
     <string name="title_activity_contacto">Contacto</string>
     <string name="title_activity_acerca_de">AcercaDe</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab1" />
+    <string name="tab2" />
+    <string name="tab3" />
+    <string name="monday" />
+    <string name="tuesday" />
+    <string name="wednesday" />
+    <string name="appbar_scrolling_view_behavior">appbar</string>
+    <string name="wednesday2">Wednesday</string>
+    <string name="monday2">Monday</string>
+    <string name="tab22">Tab2</string>
+    <string name="tab11">Tab1</string>
 </resources>
