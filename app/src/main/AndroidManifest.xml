@@ -13,7 +13,7 @@
             android:name=".AcercaDe"
             android:label="@string/title_activity_acerca_de"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.chaacho.recyclerview.MainActivity" />
