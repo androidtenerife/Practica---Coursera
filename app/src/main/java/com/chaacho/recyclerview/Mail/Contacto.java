@@ -14,16 +14,18 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 import javax.mail.AuthenticationFailedException;
 import javax.mail.MessagingException;
 
 public class Contacto extends AppCompatActivity {
+    // TODO 1 - Aquí deberás cambiar por tus datos de Conexion a una cuenta de GMAIL.
     private String user = "maderapallet@gmail.com";
     private String pass = "HdEvDaJm!";
     private String subject = "Coursera App Chaacho";
-    private EditText body, recipient;
+    private EditText body, recipient, email, nombre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,13 +33,18 @@ public class Contacto extends AppCompatActivity {
         setContentView(R.layout.activity_contacto);
         Toolbar toolbar = findViewById(R.id.toolbar);
         //setSupportActionBar(toolbar);
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        // Aquí deberás cambiar por tus datos de Conexion a una cuenta de GMAIL.
-
-
+        //this.email = findViewById(R.id.etCorreo);
+        this.nombre = findViewById(R.id.etNombre);
         this.body = (EditText) findViewById(R.id.etMensaje);
-        recipient = (EditText) findViewById(R.id.etCorreo);
+        this.recipient = (EditText) findViewById(R.id.etCorreo);
+        Button enviar = findViewById(R.id.btEnviar);
+        enviar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sendMessage();
+            }
+        });
     }
 
     private void sendMessage() {
@@ -45,7 +52,7 @@ public class Contacto extends AppCompatActivity {
         com.chaacho.recyclerview.Mail.SendEmailAsyncTask email = new com.chaacho.recyclerview.Mail.SendEmailAsyncTask();
         email.activity = this;
         email.m = new Mail(user, pass);
-        email.m.set_from(user);
+        email.m.set_from(nombre.getText().toString());
         email.m.setBody(body.getText().toString());
         email.m.set_to(recipients);
         email.m.set_subject(subject);

@@ -72,7 +72,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
         return mascotas.size();
     }
 
-    //TODO Agregar la Clase Anidada VIewHolder
+    //DO Agregar la Clase Anidada VIewHolder
     public static class MascotaViewHolder extends RecyclerView.ViewHolder {
         private ImageView imgFoto;
         private TextView tvNombre;
@@ -81,8 +81,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
         private ImageView ivLike;
 
 
-
-        // Todo Crear el constructor de la superclase
+        // do Crear el constructor de la superclase
         public MascotaViewHolder(@NonNull View itemView) {
             super(itemView);
             imgFoto = itemView.findViewById(R.id.ivPerro);

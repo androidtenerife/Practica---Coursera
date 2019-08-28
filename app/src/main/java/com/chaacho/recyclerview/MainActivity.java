@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private TabLayout tabLayout;
     private Toolbar toolbar;
-    //TODO 1 Agregar un Arraylist de Mascotas
+    //DO 1 Agregar un Arraylist de Mascotas
     ArrayList<Mascotas> mascotas;
     Activity activity;
     private RecyclerView listaMascotas;

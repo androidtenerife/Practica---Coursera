@@ -23,8 +23,7 @@ public class RecyclerViewFragment extends Fragment {
     private RecyclerView listaMascotas;
 
 
-
-    //Todo Creo sobrescribo onCreateView.
+    //do Creo sobrescribo onCreateView.
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -46,7 +45,7 @@ public class RecyclerViewFragment extends Fragment {
 
 
     public void inicializarListaMascotas() {
-        //TODO 2 Cargar Arraylist con los datos
+        //DO 2 Cargar Arraylist con los datos
         mascotas = new ArrayList<>();
         mascotas.add(new Mascotas("Dog 1", "94219", "dog1@chaacho.com", R.drawable.perro));
         mascotas.add(new Mascotas("Dog 2", "93213", "dog2@chaacho.com", R.drawable.perroa));

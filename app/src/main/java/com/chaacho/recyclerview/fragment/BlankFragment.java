@@ -48,7 +48,7 @@ public class BlankFragment extends Fragment {
     }
 
     public void inicializarListaMascotas() {
-        //TODO 2 Cargar Arraylist con los datos
+        //DO 2 Cargar Arraylist con los datos
         mascotas = new ArrayList<>();
         mascotas.add(new Mascotas("Dog 1", "94219", "dog1@chaacho.com", R.drawable.perro));
         mascotas.add(new Mascotas("Dog 2", "93213", "dog2@chaacho.com", R.drawable.perroa));
