@@ -27,4 +27,7 @@
     <string name="monday2">Monday</string>
     <string name="tab22">Tab2</string>
     <string name="tab11">Tab1</string>
+    <string name="enviar_mensaje">Enviar Mensaje</string>
+    <string name="mensaje">Mensaje</string>
+    <string name="correo">Correo</string>
 </resources>
