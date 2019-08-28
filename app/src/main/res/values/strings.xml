@@ -30,4 +30,5 @@
     <string name="enviar_mensaje">Enviar Mensaje</string>
     <string name="mensaje">Mensaje</string>
     <string name="correo">Correo</string>
+    <string name="Bad_account">Bad account details</string>
 </resources>

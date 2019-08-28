@@ -3,7 +3,6 @@ package com.chaacho.recyclerview;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
@@ -13,14 +12,14 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import androidx.appcompat.widget.Toolbar;
-import com.chaacho.recyclerview.adapter.MascotaAdaptador;
+
+import com.chaacho.recyclerview.Mail.Contacto;
 import com.chaacho.recyclerview.adapter.PageAdapter;
 import com.chaacho.recyclerview.fragment.BlankFragment;
 import com.chaacho.recyclerview.fragment.RecyclerViewFragment;
-import com.chaacho.recyclerview.pojo.Contacto;
 import com.chaacho.recyclerview.pojo.Mascotas;
 import com.google.android.material.tabs.TabLayout;
-import androidx.appcompat.widget.ActionBarOverlayLayout;
+
 import java.util.ArrayList;
 
 

@@ -3,8 +3,6 @@ package com.chaacho.recyclerview;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.chaacho.recyclerview.pojo.Contacto;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +10,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toolbar;
+
+import com.chaacho.recyclerview.Mail.Contacto;
 
 public class Detalle extends AppCompatActivity {
 
