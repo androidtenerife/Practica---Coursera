@@ -22,4 +22,8 @@
     <string name="mensaje">Mensaje</string>
     <string name="correo">Correo</string>
     <string name="Bad_account">Bad account details</string>
+    <string name="Bio">Herbert Daniel Rodríguez is a Seo speciallist FullStack developer see the complete profile in ....
+        https://www.linkedin.com/in/android-developer-1010 Visit http://www.chaacho.com</string>
+    <string name="biografia">Biografia</string>
+
 </resources>

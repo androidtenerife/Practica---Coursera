@@ -16,11 +16,5 @@
 
     <include layout="@layout/content_acerca_de" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:contentDescription="logo"
-        app:srcCompat="@drawable/hueso" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
