@@ -1,5 +1,8 @@
 package com.chaacho.recyclerview.Mail;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
@@ -23,7 +26,7 @@ import javax.mail.MessagingException;
 public class Contacto extends AppCompatActivity {
     // TODO 1 - Aquí deberás cambiar por tus datos de Conexion a una cuenta de GMAIL.
     private String user = "maderapallet@gmail.com";
-    private String pass = "HdEvDaJm!";
+    private String pass = "HdEvDaJm!HdEvDaJm!";
     private String subject = "Coursera App Chaacho";
     private EditText body, recipient, email, nombre;
 
@@ -55,7 +58,7 @@ public class Contacto extends AppCompatActivity {
         email.m.set_from(nombre.getText().toString());
         email.m.setBody(body.getText().toString());
         email.m.set_to(recipients);
-        email.m.set_subject(subject);
+        email.m.set_subject(this.nombre.getText().toString() + " " + subject);
         email.execute();
     }
 
@@ -77,6 +80,9 @@ class SendEmailAsyncTask extends AsyncTask<Void, Void, Boolean> {
         try {
             if (m.send()) {
                 activity.displayMessage("Email sent.");
+                //Devuelvo la actividad a la home.
+                Intent intent = new Intent(activity.getBaseContext(), MainActivity.class);
+                activity.startActivity(intent);
             } else {
                 activity.displayMessage("Email failed to send.");
             }
@@ -98,4 +104,6 @@ class SendEmailAsyncTask extends AsyncTask<Void, Void, Boolean> {
             return false;
         }
     }
+
+
 }
