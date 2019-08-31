@@ -2,6 +2,4 @@
 <resources>
     <dimen name="cardview_height">150dp</dimen>
     <dimen name="margin_cardview">10sp</dimen>
-    <dimen name="fab_margin">16dp</dimen>
-    <dimen name="elevacionTab">4dp</dimen>
 </resources>

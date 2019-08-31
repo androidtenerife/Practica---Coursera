@@ -5,7 +5,6 @@
     <string name="tvNombre">TextView</string>
     <string name="email">Email</string>
     <string name="Telefono">Telefono</string>
-    <string name="Apellido">Apellido</string>
     <string name="title_activity_detalle">Detalle</string>
     <string name="Like_button">Like button</string>
     <string name="likes">Likes</string>
@@ -13,17 +12,16 @@
     <string name="acerca_de">Acerca de</string>
     <string name="title_activity_contacto">Contacto</string>
     <string name="title_activity_acerca_de">AcercaDe</string>
-
-    <!-- DO: Remove or change this placeholder text -->
-
     <string name="appbar_scrolling_view_behavior">appbar</string>
-
     <string name="enviar_mensaje">Enviar Mensaje</string>
     <string name="mensaje">Mensaje</string>
     <string name="correo">Correo</string>
-    <string name="Bad_account">Bad account details</string>
-    <string name="Bio">Herbert Daniel Rodríguez is a Seo speciallist FullStack developer see the complete profile in ....
-        https://www.linkedin.com/in/android-developer-1010 Visit http://www.chaacho.com</string>
+    <string name="Bio">    Herbert Daniel Rodríguez \n
+        Seo speciallist \n FullStack developer \n see the complete profile in .... \n
+        https://www.linkedin.com/in/android-developer-1010 \n Visit http://www.chaacho.com</string>
     <string name="biografia">Biografia</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

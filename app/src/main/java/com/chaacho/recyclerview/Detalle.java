@@ -19,7 +19,7 @@ public class Detalle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle);
-        Toolbar myToolbar = findViewById(R.id.miActionBar);
+        Toolbar myToolbar = findViewById(R.id.toolbar);
         setSupportActionBar(myToolbar);
         // Defino los textViews
         TextView tvTelefono = findViewById(R.id.tvTel);

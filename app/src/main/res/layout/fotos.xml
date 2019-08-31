@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvFotos"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/llmascota"
+        android:layout_width="106dp"
+        android:layout_height="115dp"
+        android:layout_margin="@dimen/margin_cardview"
+        android:background="#03A9F4"
+        android:padding="@dimen/margin_cardview">
+
+
+        <ImageView
+            android:id="@+id/ivLike"
+            android:layout_width="34dp"
+            android:layout_height="24dp"
+
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/Like_button"
+            android:tint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvNumLikes"
+            app:layout_constraintStart_toStartOf="@+id/ivFoto"
+            app:layout_constraintTop_toBottomOf="@+id/ivFoto"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/hueso" />
+
+        <TextView
+            android:id="@+id/tvNumLikes"
+            android:layout_width="40dp"
+            android:layout_height="18dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/likes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ivFoto"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/ivLike"
+            app:layout_constraintTop_toBottomOf="@+id/ivFoto"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/ivFoto"
+            android:layout_width="78dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="4dp"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#3f51b5"
+            app:civ_shadow_radius="10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.457"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/perro" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

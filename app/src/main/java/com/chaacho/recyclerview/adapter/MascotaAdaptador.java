@@ -84,7 +84,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
         // do Crear el constructor de la superclase
         public MascotaViewHolder(@NonNull View itemView) {
             super(itemView);
-            imgFoto = itemView.findViewById(R.id.ivPerro);
+            imgFoto = itemView.findViewById(R.id.ivFotoPerro);
             tvNombre = itemView.findViewById(R.id.tvNombre);
             tvEmail = itemView.findViewById(R.id.tvMail);
             tvTel = itemView.findViewById(R.id.tvTel);

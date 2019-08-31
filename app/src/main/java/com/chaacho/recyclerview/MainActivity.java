@@ -18,6 +18,7 @@ import androidx.appcompat.widget.Toolbar;
 import com.chaacho.recyclerview.Mail.Contacto;
 import com.chaacho.recyclerview.adapter.PageAdapter;
 import com.chaacho.recyclerview.fragment.BlankFragment;
+import com.chaacho.recyclerview.fragment.FotosFragment;
 import com.chaacho.recyclerview.fragment.RecyclerViewFragment;
 import com.chaacho.recyclerview.pojo.Mascotas;
 import com.google.android.material.tabs.TabLayout;
