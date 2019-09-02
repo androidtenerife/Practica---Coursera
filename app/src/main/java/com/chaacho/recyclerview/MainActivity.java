@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Fragment> agregarFragments() {
         ArrayList<Fragment> fragments = new ArrayList<>();
         fragments.add(new RecyclerViewFragment());
-        fragments.add(new BlankFragment());
+        fragments.add(new FotosFragment());
         return fragments;
     }
 

@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
@@ -25,6 +26,7 @@ public class Detalle extends AppCompatActivity {
         TextView tvTelefono = findViewById(R.id.tvTel);
         TextView tvNombre = findViewById(R.id.tvNombre);
         TextView tvMail = findViewById(R.id.tvMail);
+        ImageView ivFotoPerro = findViewById(R.id.ivFotoPerro);
 
         // Recibo los parámetros
         try {
@@ -40,6 +42,7 @@ public class Detalle extends AppCompatActivity {
         tvTelefono.setText(telefono);
         tvNombre.setText(nombre);
         tvMail.setText(email);
+            ivFotoPerro.setImageResource(foto);
         }catch (NullPointerException e){
 
             // A null pointer occurs.

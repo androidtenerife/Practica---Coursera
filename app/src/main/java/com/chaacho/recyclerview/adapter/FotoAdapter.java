@@ -33,7 +33,7 @@ public class FotoAdapter extends RecyclerView.Adapter<FotoAdapter.FotoViewHolder
     @Override
     public FotoViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         // Inflar el layout y lo pasará al viewholder para que obtenga los views.
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.fotos, parent, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_fotos, parent, false);
 
         return new FotoViewHolder(v);
     }
@@ -43,13 +43,14 @@ public class FotoAdapter extends RecyclerView.Adapter<FotoAdapter.FotoViewHolder
     public void onBindViewHolder(@NonNull final FotoViewHolder fotoViewHolder, int position) {
         final Fotos foto = fotos.get(position);
         // fotoViewHolder.imgFoto.setImageResource(foto.getFoto());
+/*
         fotoViewHolder.ivLikes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(view.getContext(), "Has dado 1 Like a" + foto.getNumlikes(), Toast.LENGTH_SHORT).show();
             }
         });
-
+*/
     }
 
     @Override

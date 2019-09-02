@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -32,7 +33,7 @@ public class RecyclerViewFragment extends Fragment {
         listaMascotas = (RecyclerView) v.findViewById(R.id.rvMascotas);
         LinearLayoutManager llm = new LinearLayoutManager(getContext());
         llm.setOrientation(RecyclerView.VERTICAL);
-        listaMascotas.setLayoutManager(llm);
+        listaMascotas.setLayoutManager(new GridLayoutManager(getContext(), 3));
 
         inicializarListaMascotas();
         inicializarAdaptador();
