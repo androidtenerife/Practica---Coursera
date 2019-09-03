@@ -25,8 +25,8 @@ import javax.mail.MessagingException;
 
 public class Contacto extends AppCompatActivity {
     // TODO 1 - Aquí deberás cambiar por tus datos de Conexion a una cuenta de GMAIL.
-    private String user = "maderapallet@gmail.com";
-    private String pass = "HdEvDaJm!HdEvDaJm!";
+    private String user = "**** COLOCA AQUÍ TU CORREO PARA TESTEAR ****";
+    private String pass = "*** COLOCA AQUÍ TU CONTRASEÑA PARA TESTEAR ***";
     private String subject = "Coursera App Chaacho";
     private EditText body, recipient, email, nombre;
 
