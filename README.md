@@ -1,8 +1,8 @@
-# RecyclerView
-# Se trata de un proyecto para la Universidad Autónoma de Mexico ( UNAM ) en modalidad Online y en la plataforma Coursera.
-Partiendo de tu proyecto anterior deberás agregarle Menús y Fragments.
+## RecyclerView - Mascotas App Coursera
+# _Se trata de un proyecto para la Universidad Autónoma de Mexico ( UNAM ) en modalidad Online y en la plataforma Coursera.
+_Partiendo de tu proyecto anterior deberás agregarle Menús y Fragments.
 
-AGREGANDO MENÚS:
+#AGREGANDO MENÚS:
 Crea un menú de opciones que muestre el Item “Contacto” y el Item “Acerca De”
 Contacto deberá:
 Llevarte a una pantalla con un formulario en el que solicites el nombre, el correo y su mensaje (utiliza los EditText de Material Design),
