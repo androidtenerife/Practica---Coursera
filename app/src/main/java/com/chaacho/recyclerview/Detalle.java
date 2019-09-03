@@ -23,7 +23,7 @@ public class Detalle extends AppCompatActivity {
         Toolbar myToolbar = findViewById(R.id.toolbar);
         setSupportActionBar(myToolbar);
         // Defino los textViews
-        TextView tvTelefono = findViewById(R.id.tvTel);
+        TextView tvLike = findViewById(R.id.tvLike);
         TextView tvNombre = findViewById(R.id.tvNombre);
         TextView tvMail = findViewById(R.id.tvMail);
         ImageView ivFotoPerro = findViewById(R.id.ivFotoPerro);
@@ -33,13 +33,13 @@ public class Detalle extends AppCompatActivity {
             // Get String will cause Nullpointer exception.
         Bundle parametros = getIntent().getExtras();
         String nombre = parametros.getString("nombre");
-        String telefono= parametros.getString("telefono");
+            String like = parametros.getString("Like");
         String email=parametros.getString("email");
         int foto = parametros.getInt("foto");
 
 
         //Seteo los valores que vienen en parametros.
-        tvTelefono.setText(telefono);
+            tvLike.setText(like);
         tvNombre.setText(nombre);
         tvMail.setText(email);
             ivFotoPerro.setImageResource(foto);

@@ -16,45 +16,34 @@
         android:padding="@dimen/margin_cardview">
 
 
-        <com.mikhaellopez.circularimageview.CircularImageView
+        <ImageView
+            android:id="@+id/ivLike"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="46dp"
 
-            android:id="@+id/ivFotoPerro"
-            android:layout_width="101dp"
-            android:layout_height="99dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:contentDescription="@string/perro_imagen"
-            app:civ_border_color="#3f51b5"
-            app:civ_border_width="4dp"
-            app:civ_shadow="true"
-            app:civ_shadow_radius="10"
-            app:civ_shadow_color="#3f51b5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/perro" />
-
-        <TextView
-            android:id="@+id/tvNombre"
-            android:layout_width="66dp"
-            android:layout_height="18dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="188dp"
-            android:contentDescription="@string/Nombre"
-            android:text="@string/tvNombre"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="9dp"
+            android:contentDescription="@string/Like_button"
+            android:tint="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/tvMail"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@id/ivFotoPerro"
+            app:layout_constraintStart_toEndOf="@+id/tvLike"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="@string/Nombre" />
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/hueso" />
 
         <TextView
-            android:id="@+id/tvTel"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:id="@+id/tvLike"
+            android:layout_width="69dp"
+            android:layout_height="19dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             android:text="@string/Telefono"
+            app:layout_constraintBottom_toTopOf="@+id/tvMail"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/tvNombre"
@@ -62,31 +51,56 @@
 
         <TextView
             android:id="@+id/tvMail"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="229dp"
+            android:layout_height="25dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
+            android:layout_marginBottom="65dp"
             android:text="@string/email"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/tvTel"
-            app:layout_constraintTop_toBottomOf="@+id/tvTel" />
-
-        <ImageView
-            android:id="@+id/ivLike"
-            android:layout_width="wrap_content"
-            android:layout_height="27dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:contentDescription="@string/Like_button"
-
-            android:tint="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintStart_toStartOf="@+id/tvLike"
+            app:layout_constraintTop_toBottomOf="@+id/tvLike" />
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="66dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="160dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/Nombre"
+            android:text="@string/tvNombre"
+            app:layout_constraintBottom_toTopOf="@+id/tvLike"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.157"
+            app:layout_constraintStart_toEndOf="@+id/ivFotoPerro"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/Nombre" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+
+            android:id="@+id/ivFotoPerro"
+            android:layout_width="101dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginBottom="33dp"
+            android:contentDescription="@string/perro_imagen"
+            app:civ_border_color="#3f51b5"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#3f51b5"
+            app:civ_shadow_radius="10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvLike"
+            app:layout_constraintHorizontal_bias="0.657"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ivFotoPerro"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/hueso" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/perro" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

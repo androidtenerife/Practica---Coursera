@@ -20,12 +20,12 @@ public class Mascotas {
         this.nombre = nombre;
     }
 
-    public String getTelefono() {
+    public String getLike() {
         return like;
     }
 
-    public void setTelefono(String telefono) {
-        this.like = telefono;
+    public void setLike(String like) {
+        this.like = like;
     }
 
     public String getEmail() {

@@ -21,8 +21,9 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginStart="8dp"
-            android:contentDescription="@string/Like_button"
+            android:layout_marginEnd="32dp"
 
+            android:contentDescription="@string/Like_button"
             android:tint="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/ivFotoPerro"
@@ -32,43 +33,51 @@
             app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/hueso" />
 
-        <TextView
-            android:id="@+id/tvTel"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/Telefono"
-            android:visibility="invisible"
-            tools:layout_editor_absoluteX="317dp"
-            tools:layout_editor_absoluteY="72dp" />
+        <ImageView
+            android:id="@+id/ivLike2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
 
-        <TextView
-            android:id="@+id/tvMail"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/email"
-            android:visibility="invisible"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="@string/Like_button"
+            android:tint="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/tvTel"
-            app:layout_constraintTop_toBottomOf="@+id/tvTel" />
+            app:layout_constraintStart_toEndOf="@+id/ivFotoPerro"
+            app:layout_constraintTop_toBottomOf="@+id/ivFotoPerro"
+            app:srcCompat="@drawable/hueso" />
 
         <TextView
             android:id="@+id/tvNombre"
             android:layout_width="104dp"
             android:layout_height="25dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="32dp"
             android:contentDescription="@string/Nombre"
             android:text="@string/tvNombre"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/ivFotoPerro"
-            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintHorizontal_bias="0.63"
             app:layout_constraintStart_toEndOf="@id/ivFotoPerro"
             app:layout_constraintTop_toBottomOf="@+id/ivFotoPerro"
-            app:layout_constraintVertical_bias="0.246"
+            app:layout_constraintVertical_bias="0.216"
             tools:text="@string/Nombre" />
+
+        <TextView
+            android:id="@+id/tvLike"
+            android:layout_width="41dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/likes"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/ivLike2"
+            app:layout_constraintEnd_toStartOf="@+id/ivLike2"
+            app:layout_constraintHorizontal_bias="0.593"
+            app:layout_constraintStart_toEndOf="@+id/tvNombre"
+            app:layout_constraintTop_toBottomOf="@+id/ivFotoPerro"
+            app:layout_constraintVertical_bias="0.0" />
 
         <com.mikhaellopez.circularimageview.CircularImageView
 

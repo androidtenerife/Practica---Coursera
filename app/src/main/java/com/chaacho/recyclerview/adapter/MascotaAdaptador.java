@@ -39,14 +39,14 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
     //Asocia cada elemento de la lista con cada view
     public void onBindViewHolder(@NonNull final MascotaViewHolder mascotaViewHolder, int position) {
         final Mascotas mascota = mascotas.get(position);
-        mascotaViewHolder.tvTel.setText(mascota.getTelefono());
-        mascotaViewHolder.tvEmail.setText(mascota.getEmail());
+        mascotaViewHolder.tvLike.setText(mascota.getLike());
+        //mascotaViewHolder.tvEmail.setText(mascota.getEmail());
         mascotaViewHolder.tvNombre.setText(mascota.getNombre());
         mascotaViewHolder.imgFoto.setImageResource(mascota.getFoto());
         mascotaViewHolder.ivLike.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(view.getContext(),"Has dado 1 Like a" + mascota.getNombre(),Toast.LENGTH_SHORT).show();
+                Toast.makeText(view.getContext(), "Has dado 1 Like a " + mascota.getNombre(), Toast.LENGTH_SHORT).show();
             }
         });
         mascotaViewHolder.imgFoto.setOnClickListener(new View.OnClickListener() {
@@ -57,7 +57,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
                 //Intent intent = new Intent (,Detalle.class);
                 Intent intent1 = new Intent(view.getContext(), Detalle.class);
                 intent1.putExtra("nombre",mascota.getNombre());
-                intent1.putExtra("telefono",mascota.getTelefono());
+                intent1.putExtra("Like", mascota.getLike());
                 intent1.putExtra("email",mascota.getEmail());
                 intent1.putExtra("foto",mascota.getFoto());
                 view.getContext().startActivity(intent1);
@@ -76,7 +76,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
     public static class MascotaViewHolder extends RecyclerView.ViewHolder {
         private ImageView imgFoto;
         private TextView tvNombre;
-        private TextView tvTel;
+        private TextView tvLike;
         private TextView tvEmail;
         private ImageView ivLike;
 
@@ -87,7 +87,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
             imgFoto = itemView.findViewById(R.id.ivFotoPerro);
             tvNombre = itemView.findViewById(R.id.tvNombre);
             tvEmail = itemView.findViewById(R.id.tvMail);
-            tvTel = itemView.findViewById(R.id.tvTel);
+            tvLike = itemView.findViewById(R.id.tvLike);
             ivLike = itemView.findViewById(R.id.ivLike);
 
 
