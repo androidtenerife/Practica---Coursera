@@ -29,6 +29,6 @@ fallos de validacion. )
 Que corra la aplicación
 Uso de View Pager
 Modularizacion en Fragments
-Librería implementada.
+Librería implementada CircularImageView
 
-´Desarrollado por Herbert Daniel Rodríguez  tenerife.developer@gmail.com´
+Desarrollado por Herbert Daniel Rodríguez  tenerife.developer@gmail.com
