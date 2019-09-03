@@ -31,4 +31,4 @@ Uso de View Pager
 Modularizacion en Fragments
 Librería implementada.
 
-´´ Desarrollado por Herbert Daniel Rodríguez  tenerife.developer@gmail.com ´´
+´Desarrollado por Herbert Daniel Rodríguez  tenerife.developer@gmail.com´
