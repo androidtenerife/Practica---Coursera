@@ -33,9 +33,9 @@ Librería implementada CircularImageView
 
 Desarrollado por Herbert Daniel Rodríguez
 tenerife.developer@gmail.com
-Screenshot_1567537356.png	
-Screenshot_1567537362.png	
-Screenshot_1567537366.png	
-Screenshot_1567537373.png	
-Screenshot_1567537382.png	
-Screenshot_1567537395.png
+https://github.com/androidtenerife/RecyclerView/blob/master/Screenshot_1567537356.png
+https://github.com/androidtenerife/RecyclerView/blob/master/Screenshot_1567537362.png	
+https://github.com/androidtenerife/RecyclerView/blob/master/Screenshot_1567537366.png	
+https://github.com/androidtenerife/RecyclerView/blob/master/Screenshot_1567537373.png	
+https://github.com/androidtenerife/RecyclerView/blob/master/Screenshot_1567537382.png	
+https://github.com/androidtenerife/RecyclerView/blob/master/Screenshot_1567537395.png
