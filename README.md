@@ -33,3 +33,9 @@ Librería implementada CircularImageView
 
 Desarrollado por Herbert Daniel Rodríguez
 tenerife.developer@gmail.com
+Screenshot_1567537356.png	
+Screenshot_1567537362.png	
+Screenshot_1567537366.png	
+Screenshot_1567537373.png	
+Screenshot_1567537382.png	
+Screenshot_1567537395.png
