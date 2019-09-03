@@ -10,7 +10,7 @@ Además habrá un botón de “Enviar Comentario” el cual tomará la informaci
 Este es el enlace con la documentación de JavaMail: https://java.net/projects/javamail/pages/Android
 Acerca De, deberá llevarte a una pantalla con la Bio del desarrollador.
 
-FRAGMENTS
+#FRAGMENTS
 A partir de una imagen de maqueta:
 1. Modulariza el proyecto anterior en Fragments para que estos puedan ser mostrados en un ViewPager.
 2. Crea un Fragment Adicional que muestre el perfil de nuestra mascota. Tendrá su foto de perfil, 
@@ -20,7 +20,7 @@ Recuerda que todos los datos son dummy.
 Puedes utilizar esta librería para generar una imagen redonda como foto de perfil de la mascota:
 https://github.com/lopspower/CircularImageView
 
-La aplicacion debe hacer:
+#La aplicacion debe hacer:
 Mostrar los dos menús solicitados
 Que ambos menús funcionen correctamente
 Libreria JavaMail ( Si descargas el código debes usar una cuenta de Gmail para probarla y en el TODO verás donde debes escribir usuario
@@ -30,4 +30,59 @@ Que corra la aplicación
 Uso de View Pager
 Modularizacion en Fragments
 Librería implementada.
-Imágenes:
+# Título del Proyecto
+
+_Acá va un párrafo que describa lo que es el proyecto_
+
+## Comenzando 🚀
+
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+
+Mira **Deployment** para conocer como desplegar el proyecto.
+
+
+### Pre-requisitos 📋
+
+_Que cosas necesitas para instalar el software y como instalarlas_
+
+```
+Da un ejemplo
+```
+
+### Instalación 🔧
+
+_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+
+_Dí cómo será ese paso_
+
+```
+Da un ejemplo
+```
+
+_Y repite_
+
+```
+hasta finalizar
+```
+
+_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+
+## Ejecutando las pruebas ⚙️
+
+_Explica como ejecutar las pruebas automatizadas para este sistema_
+
+### Analice las pruebas end-to-end 🔩
+
+_Explica que verifican estas pruebas y por qué_
+
+```
+Da un ejemplo
+```
+
+### Y las pruebas de estilo de codificación ⌨️
+
+_Explica que verifican estas pruebas y por qué_
+
+```
+Da un ejemplo
+```
