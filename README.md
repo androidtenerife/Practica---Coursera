@@ -1,6 +1,6 @@
 ## RecyclerView - Mascotas App Coursera
-# _Se trata de un proyecto para la Universidad Autónoma de Mexico ( UNAM ) en modalidad Online y en la plataforma Coursera.
-_Partiendo de tu proyecto anterior deberás agregarle Menús y Fragments.
+# Se trata de un proyecto para la Universidad Autónoma de Mexico ( UNAM ) en modalidad Online y en la plataforma Coursera.
+Partiendo de tu proyecto anterior deberás agregarle Menús y Fragments.
 
 #AGREGANDO MENÚS:
 Crea un menú de opciones que muestre el Item “Contacto” y el Item “Acerca De”
@@ -30,5 +30,5 @@ Que corra la aplicación
 Uso de View Pager
 Modularizacion en Fragments
 Librería implementada.
-```
 
+´´´ Desarrollado por Herbert Daniel Rodríguez  tenerife.developer@gmail.com 
