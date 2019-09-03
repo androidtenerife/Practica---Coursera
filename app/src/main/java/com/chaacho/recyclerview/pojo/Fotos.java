@@ -1,5 +1,7 @@
 package com.chaacho.recyclerview.pojo;
 
+import android.widget.ImageView;
+
 public class Fotos {
     private String numlikes;
     private int foto;
@@ -22,7 +24,7 @@ public class Fotos {
     }
 
 
-    public Fotos(String likes, int foto) {
+    public Fotos(String likes, Integer foto) {
         this.numlikes = likes;
         this.foto = foto;
     }

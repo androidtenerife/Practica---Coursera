@@ -2,13 +2,13 @@ package com.chaacho.recyclerview.pojo;
 
 public class Mascotas {
     private String nombre;
-    private String telefono;
+    private String like;
     private String email;
     private int foto;
 
-    public Mascotas(String nombre, String telefono, String email, int foto) {
+    public Mascotas(String nombre, String like, String email, int foto) {
         this.nombre = nombre;
-        this.telefono = telefono;
+        this.like = like;
         this.email = email;
         this.foto = foto;
     }
@@ -21,11 +21,11 @@ public class Mascotas {
     }
 
     public String getTelefono() {
-        return telefono;
+        return like;
     }
 
     public void setTelefono(String telefono) {
-        this.telefono = telefono;
+        this.like = telefono;
     }
 
     public String getEmail() {

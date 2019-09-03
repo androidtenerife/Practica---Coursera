@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/llmascota"
         android:layout_width="match_parent"
-        android:layout_height="121dp"
+        android:layout_height="341dp"
         android:layout_margin="@dimen/margin_cardview"
         android:background="@color/colorPrimary"
         android:padding="@dimen/margin_cardview">
@@ -18,15 +18,15 @@
 
         <ImageView
             android:id="@+id/ivLike"
-            android:layout_width="54dp"
-            android:layout_height="20dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginStart="8dp"
             android:contentDescription="@string/Like_button"
 
             android:tint="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/ivFotoPerro"
-            app:layout_constraintHorizontal_bias="0.307"
+            app:layout_constraintHorizontal_bias="0.126"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/ivFotoPerro"
             app:layout_constraintVertical_bias="0.0"
@@ -36,13 +36,10 @@
             android:id="@+id/tvTel"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
             android:text="@string/Telefono"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/tvNombre"
-            app:layout_constraintTop_toBottomOf="@+id/tvNombre" />
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="317dp"
+            tools:layout_editor_absoluteY="72dp" />
 
         <TextView
             android:id="@+id/tvMail"
@@ -51,38 +48,42 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:text="@string/email"
+            android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/tvTel"
             app:layout_constraintTop_toBottomOf="@+id/tvTel" />
 
         <TextView
             android:id="@+id/tvNombre"
-            android:layout_width="66dp"
-            android:layout_height="18dp"
+            android:layout_width="104dp"
+            android:layout_height="25dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="188dp"
             android:contentDescription="@string/Nombre"
             android:text="@string/tvNombre"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ivFotoPerro"
+            app:layout_constraintHorizontal_bias="0.512"
             app:layout_constraintStart_toEndOf="@id/ivFotoPerro"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivFotoPerro"
+            app:layout_constraintVertical_bias="0.246"
             tools:text="@string/Nombre" />
 
         <com.mikhaellopez.circularimageview.CircularImageView
 
             android:id="@+id/ivFotoPerro"
-            android:layout_width="74dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="4dp"
+            android:layout_width="207dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="32dp"
             android:contentDescription="@string/perro_imagen"
             app:civ_border_color="#3f51b5"
             app:civ_border_width="4dp"
             app:civ_shadow="true"
             app:civ_shadow_color="#3f51b5"
             app:civ_shadow_radius="10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/perro" />

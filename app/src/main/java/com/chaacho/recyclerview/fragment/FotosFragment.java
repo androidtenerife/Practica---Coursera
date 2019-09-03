@@ -112,17 +112,17 @@ public class FotosFragment extends Fragment {
     private void inicializarListaFotos() {
         //DO 2 Cargar Arraylist con los datos
         fotos = new ArrayList<>();
-        fotos.add(new Fotos("1", R.drawable.perro));
-        fotos.add(new Fotos("2", R.drawable.perroa));
-        fotos.add(new Fotos("3", R.drawable.perrob));
+        fotos.add(new Fotos("1", R.drawable.perroc));
+        fotos.add(new Fotos("2", R.drawable.perroc));
+        fotos.add(new Fotos("3", R.drawable.perroc));
         fotos.add(new Fotos("4", R.drawable.perroc));
-        fotos.add(new Fotos("10", R.drawable.perro));
-        fotos.add(new Fotos("20", R.drawable.perroa));
-        fotos.add(new Fotos("30", R.drawable.perrob));
+        fotos.add(new Fotos("10", R.drawable.perroc));
+        fotos.add(new Fotos("20", R.drawable.perroc));
+        fotos.add(new Fotos("30", R.drawable.perroc));
         fotos.add(new Fotos("40", R.drawable.perroc));
-        fotos.add(new Fotos("5", R.drawable.perro));
-        fotos.add(new Fotos("6", R.drawable.perroa));
-        fotos.add(new Fotos("7", R.drawable.perrob));
+        fotos.add(new Fotos("5", R.drawable.perroc));
+        fotos.add(new Fotos("6", R.drawable.perroc));
+        fotos.add(new Fotos("7", R.drawable.perroc));
         fotos.add(new Fotos("8", R.drawable.perroc));
 
     }
