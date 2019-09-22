@@ -79,6 +79,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
         private TextView tvLike;
         private TextView tvEmail;
         private ImageView ivLike;
+        private TextView tvLikes;
 
 
         // do Crear el constructor de la superclase
@@ -87,7 +88,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
             imgFoto = itemView.findViewById(R.id.ivFotoPerro);
             tvNombre = itemView.findViewById(R.id.tvNombre);
             tvEmail = itemView.findViewById(R.id.tvMail);
-            tvLike = itemView.findViewById(R.id.tvLike);
+            tvLike = itemView.findViewById(R.id.tvLikes);
             ivLike = itemView.findViewById(R.id.ivLike);
 
 
