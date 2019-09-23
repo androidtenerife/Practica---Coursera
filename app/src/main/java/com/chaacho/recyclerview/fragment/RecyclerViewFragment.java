@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.chaacho.recyclerview.R;
 import com.chaacho.recyclerview.adapter.MascotaAdaptador;
 import com.chaacho.recyclerview.pojo.Mascotas;
+import com.chaacho.recyclerview.presentador.IRecyclerViewFragmentPresenter;
 
 import java.util.ArrayList;
 
@@ -22,6 +23,7 @@ public class RecyclerViewFragment extends Fragment implements IRecyclerViewFragm
     private ArrayList<Mascotas> mascotas;
 
     private RecyclerView listaMascotas;
+    private IRecyclerViewFragmentPresenter presenter;
 
 
     //do Creo sobrescribo onCreateView.
@@ -35,7 +37,7 @@ public class RecyclerViewFragment extends Fragment implements IRecyclerViewFragm
 
 
         // return super.onCreateView(inflater, container, savedInstanceState);
-
+        presenter = new RecyclerViewFragmentPresenter(this, getContext());
         return v;
     }
 
