@@ -9,7 +9,7 @@ public interface IRecyclerViewFragment {
 
     public MascotaAdaptador crearAdaptador(ArrayList<Mascotas> mascotas);
 
-    public void inicializarAdaptador();
+    public void inicializarAdaptador(MascotaAdaptador adaptador);
 
     public void generarLinearLayoutVertical();
 }
