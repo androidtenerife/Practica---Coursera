@@ -12,6 +12,11 @@ public class Mascotas {
         this.email = email;
         this.foto = foto;
     }
+
+    public Mascotas() {
+
+    }
+
     public String getNombre() {
         return nombre;
     }
