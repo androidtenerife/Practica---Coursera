@@ -66,7 +66,7 @@
             tools:text="@string/Nombre" />
 
         <TextView
-            android:id="@+id/tvLike"
+            android:id="@+id/tvLikes"
             android:layout_width="41dp"
             android:layout_height="36dp"
             android:layout_marginTop="20dp"

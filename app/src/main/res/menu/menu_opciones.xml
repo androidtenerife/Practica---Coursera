@@ -11,10 +11,4 @@
     android:titleCondensed="Acerca de"
     android:orderInCategory="101">
     </item>
-<item android:title="@string/Like_button"
-    app:showAsAction="always"
-    android:titleCondensed="@string/Like_button"
-    android:id="@+id/Star"
-    android:icon="@drawable/ic_stars">
-    </item>
 </menu>

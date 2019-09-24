@@ -11,13 +11,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import androidx.appcompat.widget.Toolbar;
 
 import com.chaacho.recyclerview.Mail.Contacto;
 import com.chaacho.recyclerview.adapter.PageAdapter;
-import com.chaacho.recyclerview.fragment.BlankFragment;
 import com.chaacho.recyclerview.fragment.FotosFragment;
 import com.chaacho.recyclerview.fragment.RecyclerViewFragment;
 import com.chaacho.recyclerview.pojo.Mascotas;
@@ -98,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
         viewPager.setAdapter(new PageAdapter(getSupportFragmentManager(), agregarFragments()));
         tabLayout.setupWithViewPager(viewPager);
-        tabLayout.getTabAt(0).setIcon(R.drawable.ic_stars);
-        tabLayout.getTabAt(1).setIcon(R.drawable.hueso);
+        tabLayout.getTabAt(0).setIcon(R.drawable.casetatab);
+        tabLayout.getTabAt(1).setIcon(R.drawable.perrotab);
     }
 }

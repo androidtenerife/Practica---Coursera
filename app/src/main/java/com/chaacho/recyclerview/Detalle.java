@@ -23,7 +23,7 @@ public class Detalle extends AppCompatActivity {
         Toolbar myToolbar = findViewById(R.id.toolbar);
         setSupportActionBar(myToolbar);
         // Defino los textViews
-        TextView tvLike = findViewById(R.id.tvLike);
+        TextView tvLike = findViewById(R.id.tvLikes);
         TextView tvNombre = findViewById(R.id.tvNombre);
         TextView tvMail = findViewById(R.id.tvMail);
         ImageView ivFotoPerro = findViewById(R.id.ivFotoPerro);

@@ -27,7 +27,7 @@ public class FotosFragment extends Fragment {
     private RecyclerView listaFotos;
 
 
-    // TODO: Rename and change types of parameters
+    // DO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
@@ -37,15 +37,8 @@ public class FotosFragment extends Fragment {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment FotosFragment.
-     */
-    // TODO: Rename and change types and number of parameters
+
+    // DO: Rename and change types and number of parameters
     public static FotosFragment newInstance(String param1, String param2) {
         FotosFragment fragment = new FotosFragment();
         Bundle args = new Bundle();
@@ -80,7 +73,7 @@ public class FotosFragment extends Fragment {
         return v;
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
+    // DO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
             mListener.onFragmentInteraction(uri);
@@ -105,7 +98,7 @@ public class FotosFragment extends Fragment {
     }
 
     public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
+        // DO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
 
