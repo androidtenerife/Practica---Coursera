@@ -12,6 +12,7 @@ public class ConstructorMascotas {
     private Context context;
 
     public ConstructorMascotas(Context context) {
+
         this.context = context;
     }
 

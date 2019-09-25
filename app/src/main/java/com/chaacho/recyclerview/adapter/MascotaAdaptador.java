@@ -39,7 +39,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
     //Asocia cada elemento de la lista con cada view
     public void onBindViewHolder(@NonNull final MascotaViewHolder mascotaViewHolder, int position) {
         final Mascotas mascota = mascotas.get(position);
-        mascotaViewHolder.tvLike.setText(mascota.getLike());
+        // mascotaViewHolder.tvLike.setText(mascota.getLike());
         //mascotaViewHolder.tvEmail.setText(mascota.getEmail());
         mascotaViewHolder.tvNombre.setText(mascota.getNombre());
         mascotaViewHolder.imgFoto.setImageResource(mascota.getFoto());

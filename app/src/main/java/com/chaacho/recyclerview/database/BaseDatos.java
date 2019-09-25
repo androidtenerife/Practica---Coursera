@@ -29,9 +29,10 @@ public class BaseDatos extends SQLiteOpenHelper {
         String queryCrearTablaMascotas = "CREATE TABLE " + ConstantesBaseDatos.TABLE_MASCOTA + "(" +
                 ConstantesBaseDatos.TABLE_MASCOTA_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 ConstantesBaseDatos.TABLE_MASCOTA_NOMBRE + " TEXT, " +
-                // ConstantesBaseDatos.TABLE_MASCOTA_TELEFONO + " TEXT, " +
+                ConstantesBaseDatos.TABLE_MASCOTA_TELEFONO + " TEXT, " +
                 ConstantesBaseDatos.TABLE_MASCOTA_EMAIL + " TEXT, " +
                 ConstantesBaseDatos.TABLE_MASCOTA_FOTO + " INTEGER " + ")";
+
         String queryCrearTablaLikesMascota = "CREATE TABLE " + ConstantesBaseDatos.TABLE_LIKES_MASCOTA + "(" +
                 ConstantesBaseDatos.TABLE_LIKES_MASCOTA_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 ConstantesBaseDatos.TABLE_LIKES_MASCOTA_ID_MASCOTA + " INTEGER , " +
@@ -39,7 +40,7 @@ public class BaseDatos extends SQLiteOpenHelper {
                 " FOREIGN KEY (" + ConstantesBaseDatos.TABLE_LIKES_MASCOTA_ID_MASCOTA + ") " +
                 " REFERENCES " + ConstantesBaseDatos.TABLE_MASCOTA + "(" + ConstantesBaseDatos.TABLE_MASCOTA_ID + ")" +
                 ")";
-        db.execSQL(queryCrearTablaMascotas);
+        //db.execSQL(queryCrearTablaMascotas);
         db.execSQL(queryCrearTablaLikesMascota);
 
     }
@@ -56,17 +57,17 @@ public class BaseDatos extends SQLiteOpenHelper {
     public ArrayList<Mascotas> obtenerTodosLasMascotas() {
         ArrayList<Mascotas> mascotas = new ArrayList<>();
         //Ejecucion del Query
-        String query = "SELECT * FROM " + ConstantesBaseDatos.TABLE_MASCOTA;
+        String query = "SELECT * FROM " + ConstantesBaseDatos.DATABASE_NAME + "";
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor registros = db.rawQuery(query, null);
 
         while (registros.moveToNext()) {
             Mascotas mascotaActual = new Mascotas();
-            // mascotaActual.setId(registros.getInt(0));
+            mascotaActual.setId(registros.getInt(0));
             mascotaActual.setNombre(registros.getString(1));
             //mascotaActual.setTelefono(registros.getString(2));
             mascotaActual.setEmail(registros.getString(3));
-            mascotaActual.setFoto(registros.getInt(4));
+            //mascotaActual.setFoto(registros.getInt(4));
             // mascotaActual.setLike(registros.getInt(5));
 
             mascotas.add(mascotaActual);
@@ -78,7 +79,7 @@ public class BaseDatos extends SQLiteOpenHelper {
     public void insertarMascota(ContentValues contentValues) {
 
         SQLiteDatabase db = this.getWritableDatabase();
-        db.insert(ConstantesBaseDatos.TABLE_MASCOTA, null, contentValues);
+        db.insert(ConstantesBaseDatos.DATABASE_NAME, null, contentValues);
         db.close();
     }
 }
